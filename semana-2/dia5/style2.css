@@ -1,0 +1,34 @@
+*{
+   margin: 0;
+   padding: 0;
+}
+
+.container{
+   display: grid;
+   height: 100vh;
+   border: solid 2px;
+   /*  en esta propiedad yo puedo definir el numero de columnas que quiero mostrar 
+   auto */
+   grid-template-columns: auto auto auto auto;
+   grid-template-rows: auto auto auto auto ;
+   align-items: center;
+}
+.container div{
+   padding: 10px;
+   font-size: 2em;
+   text-align: center;
+
+}
+.item1{
+   background-color: rgb(51, 213, 56);
+   border: blue;
+   grid-row: 1/3;
+}
+.reset{
+   border: solid;
+   grid-column: 3/span 2;
+}
+.equal{
+   border: solid red;
+   grid-column: 3/ span 2;
+}

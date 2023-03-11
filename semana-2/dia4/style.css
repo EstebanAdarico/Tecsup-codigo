@@ -1,0 +1,98 @@
+
+:root {
+   --white: hsl(0, 0%, 100%);
+   --very-dark-blueA : hsl(215, 32%, 27%);
+   --Very-dark-blueB : hsl(217, 54%, 11%);
+   --Very-blue : hsl(215, 68%, 16%);
+   --Soft-blue: hsl(215, 51%, 70%);
+   --Cyan: hsl(178, 100%, 50%);
+}
+body {
+   padding: 0;
+   margin: 0;
+   font-family: 'Outfit', sans-serif;
+   
+
+}
+.container{
+   display: flex;
+   justify-content: center;
+   background-color: var(--Very-dark-blueB);
+   width: 100%;
+   height: 100vh;
+   
+}
+.container__card{
+   background-color:var(--Very-blue);
+   margin-top: 50px;
+   width: 300px;
+   height: 500px;
+   border-radius: 12px;
+   border: 1px solid ;
+   
+}
+.imgcubo{
+   background-position: center;
+   background-size:cover;
+   background-repeat: no-repeat;
+   display: block;
+   margin: auto;
+   border-radius: 12px;
+   max-width: 100%;
+   max-height: 100%;;
+
+}
+
+.container__imag{
+   display:inline-block;
+   text-align: left;
+   
+   margin: 20px;
+   
+}
+.container__title{
+   color: var(--white);
+   font-size: 20px;
+   text-align: initial;
+}
+.segundaDivision{
+   display: flex;
+   
+   justify-content:space-between;
+   margin: 20px 0 20px 0;
+}
+.span2{
+   color: var(--Cyan);
+}
+.span1{
+   
+   color: var(--Soft-blue);
+} 
+.span3{
+   display: inline-block;
+   color: var(--Soft-blue);
+}
+.terceraDivision{
+   border-top: 1px solid var(--Soft-blue) ;
+   color: var(--Soft-blue);
+}
+.segundaDivision .imagenclock{
+   background-image: url("./icon-clock.svg");
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+   display: inline-block;
+   width: 15px;
+   height: 15px;
+   margin-right: 2px;
+
+}
+.segundaDivision .imagenther{
+background-image: url("./icon-ethereum.svg");   
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+display: inline-block;
+width: 15px;
+height: 15px;
+}

@@ -1,0 +1,120 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+body{
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   overflow-x:hidden;
+}
+.container{
+   display: flex;
+}
+/* *animaciones  */
+.text__animation{
+   /* una animacion esta compuesta por un nombre y un tiempo  */
+   animation-name: text-volador;
+   animation-duration: 10s;
+   animation-iteration-count: infinite;
+   border: solid;
+}
+@keyframes text-volador{
+   from{
+      margin-left: 100%;
+      width: 300%;
+      background-color: aqua;
+      border: none;
+   }
+   to{
+      margin-left: -100%;
+      background-color: peru;
+      color: blue;
+      border: none;
+   }
+}
+
+/*  esto es parte de un solo componente */
+.imagen-sisse{
+   
+   border-radius: 50%;
+   animation-name: imagen-creciendo;
+   animation-duration: 5s;
+   animation-iteration-count: infinite;
+   /* para que cresca la imagen o el tope de la imagen  */
+   width: 300px;
+   height: 300px;
+}
+@keyframes imagen-creciendo{
+   from{
+      width: 20px;
+      height: 20px;
+
+   }
+   to{
+      background-image: url("./coraje.jpeg");
+      width: 300px;
+      height: 300px;
+   }
+}
+
+.box__uno{
+   height: 500px;
+   width: 500px;
+   animation-iteration-count: infinite;
+   animation-name: box-animation;
+   animation-duration: 10s;
+}
+/* toma el nombre de  animation-name */
+@keyframes box-animation{
+   0%{
+      height: 500px;
+      width: 500px;
+      border-radius: 50%;
+      background-image:url(./coraje.jpeg);
+      background-size: cover;
+   }
+   25%{
+      height: 500px;
+      width: 500px;
+      border-radius: 50%;
+      background-image:url(../dia4/image-equilibrium.jpg);
+      background-size: cover;
+   }
+   50%{
+      height: 500px;
+      width: 500px;
+      border-radius: 50%;
+      background-image: url(./fondotech.png);
+      background-size: cover;
+   }
+   100%{
+      height: 500px;
+      width: 500px;
+      border-radius: 50%;
+      background-image: url(./neon-ultrawide-grid-4k-vaporwave.jpg);
+      background-size: cover;
+   }
+}
+
+.pelota{
+   width: 50px;
+   height: 50px;
+   border-radius: 50%;
+   background-color:black;
+}
+.pelota{
+   animation: rebote 1s infinite;
+
+}
+@keyframes rebote{
+   0%{
+      transform: translateY(0);
+   }
+   50%{
+      transform: translatey(-50px);
+   }
+   100%{
+      transform:translatey(0)
+   }
+
+}

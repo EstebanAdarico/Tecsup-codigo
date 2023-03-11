@@ -56,8 +56,8 @@ body {
    text-align: initial;
 }
 .segundaDivision{
-   display: flex;
    
+   display:flex;
    justify-content:space-between;
    margin: 20px 0 20px 0;
 }
@@ -69,7 +69,7 @@ body {
    color: var(--Soft-blue);
 } 
 .span3{
-   display: inline-block;
+   
    color: var(--Soft-blue);
 }
 .terceraDivision{
@@ -84,7 +84,7 @@ body {
    display: inline-block;
    width: 15px;
    height: 15px;
-   margin-right: 2px;
+   
 
 }
 .segundaDivision .imagenther{
@@ -95,4 +95,6 @@ background-repeat: no-repeat;
 display: inline-block;
 width: 15px;
 height: 15px;
+
+
 }

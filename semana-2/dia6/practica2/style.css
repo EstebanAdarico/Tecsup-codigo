@@ -1,0 +1,26 @@
+body{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   background-color: #354b8e;
+}
+section{
+   margin-top: 4rem;
+   display: flex;
+   width: 700px;
+   height: 500px;
+   
+}
+section img{
+width: 0;
+flex-grow: 1;
+object-position:cover ;
+opacity: .8;
+transition: .5s ease;
+}
+section img:hover{
+   cursor: grab;
+   width: 300px;
+   filter: contrast(130%);
+}

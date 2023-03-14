@@ -1,0 +1,28 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+body{
+   background-color: #458996;
+
+}
+.section{
+   width: 50%;
+}
+li{
+   display: block;
+}
+
+/* cuando tengamos como maximo respecto al screen 480  se cambiara al color coffe */
+@media(max-width:480px){
+   body{
+      background-color: #55442a;
+   }
+}
+/* es como lo minimo que acepta parq  que pueda cambiar a la mediada  que nosotros le mandemos */
+@media(min-width:1000px){
+   body{
+      background-color: aqua;
+   }
+}

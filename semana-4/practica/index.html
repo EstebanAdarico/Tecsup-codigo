@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- ====================================fonst============ -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+
+   <!--================================link-style===========-->
+   <link rel="stylesheet" href="./style.css">
+
+   <!-- =============================estilohighlight============= -->
+   <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/stackoverflow-dark.min.css">
+
+
+   <title>Document</title>
+</head>
+
+<body>
+   <div class="container__principal">
+      <div class="container__principal-title">
+         <h1>practica</h1>
+      </div>
+      <div class="container__preguntaRespuesta">
+         <div class="container__Pregunta">
+            <h2>PRIMERA PREGUNTA 6 </h2>
+            <p>6. Determinar el sueldo semanal de un trabajador basándose en sus horas trabajadas y su salario de hora
+               hombre</p>
+         </div>
+         <div class="container__respuesta">
+            <div class="form">
+               <p>Ingresa salario</p>
+               <input class="input" type="number" id="salario">
+               <p>Ingresa horas</p>
+               <input class="input" type="number" id="horas">
+               <button class="primary-button" onClick=sueldoSemanal()> calcular</button>
+               <input class="input" type="number" id="result" placeholder="resultado">
+            </div>
+         </div>
+      </div>
+      <div class="container__code">
+         <h2>CODIGO</h2>
+         <pre class="container__code-code">
+               <code class="javascript">
+                  const sueldoSemanal = () => {
+                     const salari = document.getElementById("salario");
+                     const hora = document.getElementById("horas");
+                     const result = document.getElementById("result");
+                     const multi = hora.value * salari.value;
+                     result.placeholder = `s/${multi}.00 soles`;
+                  };
+               </code>
+            </pre>
+      </div>
+      <div class="container__preguntaRespuesta">
+         <div class="container__Pregunta">
+            <h2>PRIMERA PREGUNTA 7 </h2>
+            <p>7. Una modista, para realizar sus prendas de vestir, encarga las telas al extranjero. Para cada pedido,
+               tiene que proporcionar las medidas de la tela en pulgadas, pero ella generalmente las tiene en metros.
+               Realice un algoritmo para ayudar a resolver el problema, determinando cuantas pulgadas debe pedir con
+               base en los metros que requiere. (1 pulgada = 0.0254 m).</p>
+         </div>
+         <div class="container__respuesta">
+            <div class="form">
+               <!-- <p>Ingresa salario</p>
+               <input class="input" type="number" id="salario"> -->
+               <p>Ingresa metros</p>
+               <input class="input" type="number" id="metro">
+               <button class="primary-button" onClick=conversor()> calcular</button>
+               <input class="input" type="number" id="resul" placeholder="pulgadas">
+            </div>
+         </div>
+      </div>
+      <div>
+         <div class="container__code">
+            <pre class="container__code-code">
+               <h2> CODIGO</h2>
+                  <code class="javascript">
+                     const conversor = () => {
+                        const metros = document.getElementById("metro");
+                        const result = document.getElementById("resul");
+                        const mult = metros.value * 39.37;
+                        console.log(mult);
+                        result.placeholder = `${mult.toFixed(2)} pulgadas`;
+                     };
+                  </code>
+               </pre>
+         </div>
+         <img src="" alt="">
+      </div>
+      <div class="container__preguntaRespuesta">
+         <div class="container__Pregunta">
+            <h2>PRIMERA PREGUNTA 8 </h2>
+            <p>8. Una empresa importadora desea determinar cuántos dólares puede adquirir con equis cantidad de dinero
+               peruano.</p>
+         </div>
+         <div class="container__respuesta">
+            <div class="form">
+               <!-- <p>Ingresa salario</p>
+               <input class="input" type="number" id="salario"> -->
+               <p>Ingresa soles</p>
+               <input class="input" type="number" id="soles">
+               <button class="primary-button" onClick=conversorDinero()> calcular</button>
+               <input class="input" type="number" id="resul2" placeholder="dolares">
+               <p>tipo de cambio = 3.77</p>
+            </div>
+         </div>
+      </div>
+      <div class="container__code">
+         <h2> CODIGO</h2>
+         <pre class="container__code-code">
+               <code class="javascript">
+                  const conversorDinero = () => {
+                     const soles = document.getElementById("soles");
+                     const resul2 = document.getElementById("resul2");
+                     const multi = soles.value / 3.77;
+                     resul2.placeholder = `$ ${multi.toFixed(2)} dolares`;
+                  };
+               </code>
+            </pre>
+      </div>
+   </div>
+
+
+
+
+   <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+
+   <script>hljs.highlightAll();</script>
+
+   <script src="./app.js"></script>
+</body>
+
+</html>

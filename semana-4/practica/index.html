@@ -124,6 +124,38 @@
                </code>
             </pre>
       </div>
+      <div class="container__preguntaRespuesta">
+         <div class="container__Pregunta">
+            <h2>PRIMERA PREGUNTA 9 </h2>
+            <p>9. Una empresa que contrata personal requiere determinar la edad de las personas que solicitan trabajo,
+               pero cuando se les realiza la entrevista sólo se les pregunta el año en que nacieron</p>
+         </div>
+         <div class="container__respuesta">
+            <div class="form">
+               <!-- <p>Ingresa salario</p>
+               <input class="input" type="number" id="salario"> -->
+               <p>Ingresa soles</p>
+               <input class="input" type="number" id="soles">
+               <button class="primary-button" onClick=conversorDinero()> calcular</button>
+               <input class="input" type="number" id="resul2" placeholder="dolares">
+               <p>tipo de cambio = 3.77</p>
+            </div>
+         </div>
+      </div>
+      <div class="container__code">
+         <h2> CODIGO</h2>
+         <pre class="container__code-code">
+               <code class="javascript">
+                  const conversorDinero = () => {
+                     const soles = document.getElementById("soles");
+                     const resul2 = document.getElementById("resul2");
+                     const multi = soles.value / 3.77;
+                     resul2.placeholder = `$ ${multi.toFixed(2)} dolares`;
+                  };
+               </code>
+            </pre>
+      </div>
+
    </div>
 
 

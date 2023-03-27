@@ -16,3 +16,10 @@ https://estebanadarico.github.io/Tecsup-codigo/semana-2/dia6/index.html
 https://tecsup-codigo.vercel.app/
 
 ![WM-Screenshots-20230311103805](https://user-images.githubusercontent.com/66855314/224493558-d226d344-62d6-449a-ba6a-c365d5fdb3fc.png)
+
+#LA PRACTICA DE LA CUARTA SEMANA
+
+https://estebanadarico.github.io/Tecsup-codigo/semana-4/practica/index.html
+
+
+![WM-Screenshots-20230324185700](https://user-images.githubusercontent.com/66855314/227664029-a651d15e-f692-4935-986a-a4d3029e0abc.png)

@@ -3,39 +3,17 @@
 const API_URL = "https://jsonplaceholder.typicode.com";
 const xhr = new XMLHttpRequest();
 
-// crearemos un controlador de solicitud (handler)
-// LO UTILOZAREMOS COMO UN CALLBACK
-function onRequestHandler() {
-   if (this.readyState === 4 && this.status === 200) {
-      // 0 = UNSET , no se ha llamado al metodo open
-      // 1 = OPENED , se ha llamado al metodo open
-      // 2 = HEADER_RECEIVED , se ha llamado al metodo send()
-      // 3 = LOADING , está cargando , es decir , está recibiendo la respuesta
-      // 4 = DONE , se ha completado la operacion
+const HTMLResponse = document.getElementById("app");
+fetch(`${API_URL}/users`)
+   .then((response) => response.json())
+   .then((users) => {
+      const tpl = users.map((user) => `<li>${user.name} # ${user.number}</li>`);
+      HTMLResponse.innerHTML = `<lu>${tpl}</lu>`;
+   });
 
-      //guardar los datos y tranformando a JSON
-      const data = JSON.parse(this.response);
-
-      console.log(data);
-
-      // PARA ACTIVAR EL COLOREADO DE PINTA API
-      const pinta = document.querySelector("#app");
-
-      const tpl = data.map(
-         (users) => `<li>${users.name} 📧 ${users.email}</li>`
-      );
-      pinta.innerHTML = `<ul>${tpl}</ul>`;
-   }
-}
-// llamando a la funcion para que se ejecute
-// agregando un elemento de escucha
-// esta llamando al evento load
-xhr.addEventListener("load", onRequestHandler);
-// el metodo open recibe don parametros (el verbo o la peticion que hace http y la url)
-xhr.open("GET", `${API_URL}/users`);
-// luego llamamos al metodo send para que inicie el state 2 y luego siga hasta response
-xhr.send();
-
+/**
+ * !es parte del codigo que donde estamos practicando los metodos de las practicas*/
+///holacomo
 // alumnos.forEach((alumno, index) => {
 //    if (alumno === "esteban") {
 //       console.log(`hola presiado alumno ${alumno}`);
